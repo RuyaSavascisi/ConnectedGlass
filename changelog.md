@@ -1,3 +1,6 @@
+### Connected Glass 1.1.11a
+- Fixed Fusion being required on the server
+
 ### Connected Glass 1.1.11
 - Added Japanese translations (thanks to ALFECLARE!)
 - Updated Russian translations (thanks to TheAnaxMan!)
