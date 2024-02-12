@@ -21,7 +21,7 @@ import java.util.function.Function;
 /**
  * Created 5/7/2020 by SuperMartijn642
  */
-@Mod(modid = "@mod_id@", name = "@mod_name@", version = "@mod_version@", dependencies = "required-after:supermartijn642corelib@@core_library_dependency@;required-after:fusion@@fusion_dependency@")
+@Mod(modid = "@mod_id@", name = "@mod_name@", version = "@mod_version@", dependencies = "required-after:supermartijn642corelib@@core_library_dependency@;required-after-client:fusion@@fusion_dependency@")
 public class ConnectedGlass {
 
     public static final CreativeItemGroup GROUP = CreativeItemGroup.create("connectedglass", () -> CGGlassType.BORDERLESS_GLASS.getBlock());
