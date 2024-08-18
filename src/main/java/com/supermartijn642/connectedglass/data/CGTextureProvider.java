@@ -21,10 +21,10 @@ public class CGTextureProvider extends ChiseledTextureProvider {
             if(color == DyeColor.RED)
                 continue;
             String colorName = color.getName();
-            PaletteMap paletteMap = this.createPaletteMap(new ResourceLocation("connectedglass", "palettes/red_palette"), new ResourceLocation("connectedglass", "palettes/" + colorName + "_palette"));
+            PaletteMap paletteMap = this.createPaletteMap(ResourceLocation.fromNamespaceAndPath("connectedglass", "palettes/red_palette"), ResourceLocation.fromNamespaceAndPath("connectedglass", "palettes/" + colorName + "_palette"));
             for(CGGlassType type : CGGlassType.values()){
-                paletteMap.applyToTexture(new ResourceLocation("connectedglass", type.getRegistryName() + "/" + type.getRegistryName() + "_red"), type.getRegistryName() + "/" + type.getRegistryName(color));
-                paletteMap.applyToTexture(new ResourceLocation("connectedglass", type.getRegistryName() + "/" + type.getRegistryName() + "_red_edge"), type.getRegistryName() + "/" + type.getRegistryName(color) + "_edge");
+                paletteMap.applyToTexture(ResourceLocation.fromNamespaceAndPath("connectedglass", type.getRegistryName() + "/" + type.getRegistryName() + "_red"), type.getRegistryName() + "/" + type.getRegistryName(color));
+                paletteMap.applyToTexture(ResourceLocation.fromNamespaceAndPath("connectedglass", type.getRegistryName() + "/" + type.getRegistryName() + "_red_edge"), type.getRegistryName() + "/" + type.getRegistryName(color) + "_edge");
             }
         }
     }

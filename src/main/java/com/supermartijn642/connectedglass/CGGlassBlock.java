@@ -15,7 +15,7 @@ public class CGGlassBlock extends TransparentBlock {
 
     public CGGlassBlock(String texture, boolean connected){
         super(Properties.of().sound(SoundType.GLASS).instrument(NoteBlockInstrument.HAT).strength(0.3f).noOcclusion().isValidSpawn((a, b, c, d) -> false).isRedstoneConductor((a, b, c) -> false).isSuffocating((a, b, c) -> false).isViewBlocking((a, b, c) -> false));
-        this.texture = new ResourceLocation("connectedglass", texture);
+        this.texture = ResourceLocation.fromNamespaceAndPath("connectedglass", texture);
         this.connected = connected;
     }
 }

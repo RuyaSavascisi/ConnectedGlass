@@ -23,22 +23,22 @@ public class CGFusionModelGenerator extends FusionModelProvider {
     public void generate(){
         // Create the glass block models
         for(CGGlassType type : CGGlassType.values()){
-            this.addModel(new ResourceLocation("connectedglass", type.getRegistryName()),
+            this.addModel(ResourceLocation.fromNamespaceAndPath("connectedglass", type.getRegistryName()),
                 ModelInstance.of(
                     DefaultModelTypes.CONNECTING,
                     ConnectingModelData.builder()
-                        .parent(new ResourceLocation("block/cube_all"))
-                        .texture("all", new ResourceLocation("connectedglass", type.getRegistryName() + "/" + type.getRegistryName()))
+                        .parent(ResourceLocation.withDefaultNamespace("block/cube_all"))
+                        .texture("all", ResourceLocation.fromNamespaceAndPath("connectedglass", type.getRegistryName() + "/" + type.getRegistryName()))
                         .build()
                 )
             );
             for(DyeColor color : DyeColor.values()){
-                this.addModel(new ResourceLocation("connectedglass", type.getRegistryName(color)),
+                this.addModel(ResourceLocation.fromNamespaceAndPath("connectedglass", type.getRegistryName(color)),
                     ModelInstance.of(
                         DefaultModelTypes.CONNECTING,
                         ConnectingModelData.builder()
-                            .parent(new ResourceLocation("block/cube_all"))
-                            .texture("all", new ResourceLocation("connectedglass", type.getRegistryName() + "/" + type.getRegistryName(color)))
+                            .parent(ResourceLocation.withDefaultNamespace("block/cube_all"))
+                            .texture("all", ResourceLocation.fromNamespaceAndPath("connectedglass", type.getRegistryName() + "/" + type.getRegistryName(color)))
                             .build()
                     )
                 );
@@ -56,57 +56,57 @@ public class CGFusionModelGenerator extends FusionModelProvider {
     }
 
     private void createPaneModels(String identifier, String texture){
-        this.addModel(new ResourceLocation("connectedglass", identifier + "_side"),
+        this.addModel(ResourceLocation.fromNamespaceAndPath("connectedglass", identifier + "_side"),
             ModelInstance.of(
                 DefaultModelTypes.CONNECTING,
                 ConnectingModelData.builder()
-                    .parent(new ResourceLocation("connectedglass", "block/template_glass_pane_side"))
-                    .texture("pane", new ResourceLocation("connectedglass", texture))
-                    .texture("edge", new ResourceLocation("connectedglass", texture + "_edge"))
+                    .parent(ResourceLocation.fromNamespaceAndPath("connectedglass", "block/template_glass_pane_side"))
+                    .texture("pane", ResourceLocation.fromNamespaceAndPath("connectedglass", texture))
+                    .texture("edge", ResourceLocation.fromNamespaceAndPath("connectedglass", texture + "_edge"))
                     .connection(DefaultConnectionPredicates.isSameBlock())
                     .build()
             )
         );
-        this.addModel(new ResourceLocation("connectedglass", identifier + "_post"),
+        this.addModel(ResourceLocation.fromNamespaceAndPath("connectedglass", identifier + "_post"),
             ModelInstance.of(
                 DefaultModelTypes.CONNECTING,
                 ConnectingModelData.builder()
-                    .parent(new ResourceLocation("connectedglass", "block/template_glass_pane_post"))
-                    .texture("pane", new ResourceLocation("connectedglass", texture))
-                    .texture("edge", new ResourceLocation("connectedglass", texture + "_edge"))
+                    .parent(ResourceLocation.fromNamespaceAndPath("connectedglass", "block/template_glass_pane_post"))
+                    .texture("pane", ResourceLocation.fromNamespaceAndPath("connectedglass", texture))
+                    .texture("edge", ResourceLocation.fromNamespaceAndPath("connectedglass", texture + "_edge"))
                     .connection(DefaultConnectionPredicates.isSameBlock())
                     .build()
             )
         );
-        this.addModel(new ResourceLocation("connectedglass", identifier + "_side_alt"),
+        this.addModel(ResourceLocation.fromNamespaceAndPath("connectedglass", identifier + "_side_alt"),
             ModelInstance.of(
                 DefaultModelTypes.CONNECTING,
                 ConnectingModelData.builder()
-                    .parent(new ResourceLocation("connectedglass", "block/template_glass_pane_side_alt"))
-                    .texture("pane", new ResourceLocation("connectedglass", texture))
-                    .texture("edge", new ResourceLocation("connectedglass", texture + "_edge"))
+                    .parent(ResourceLocation.fromNamespaceAndPath("connectedglass", "block/template_glass_pane_side_alt"))
+                    .texture("pane", ResourceLocation.fromNamespaceAndPath("connectedglass", texture))
+                    .texture("edge", ResourceLocation.fromNamespaceAndPath("connectedglass", texture + "_edge"))
                     .connection(DefaultConnectionPredicates.isSameBlock())
                     .build()
             )
         );
-        this.addModel(new ResourceLocation("connectedglass", identifier + "_noside"),
+        this.addModel(ResourceLocation.fromNamespaceAndPath("connectedglass", identifier + "_noside"),
             ModelInstance.of(
                 DefaultModelTypes.CONNECTING,
                 ConnectingModelData.builder()
-                    .parent(new ResourceLocation("connectedglass", "block/template_glass_pane_noside"))
-                    .texture("pane", new ResourceLocation("connectedglass", texture))
-                    .texture("edge", new ResourceLocation("connectedglass", texture + "_edge"))
+                    .parent(ResourceLocation.fromNamespaceAndPath("connectedglass", "block/template_glass_pane_noside"))
+                    .texture("pane", ResourceLocation.fromNamespaceAndPath("connectedglass", texture))
+                    .texture("edge", ResourceLocation.fromNamespaceAndPath("connectedglass", texture + "_edge"))
                     .connection(DefaultConnectionPredicates.isSameBlock())
                     .build()
             )
         );
-        this.addModel(new ResourceLocation("connectedglass", identifier + "_noside_alt"),
+        this.addModel(ResourceLocation.fromNamespaceAndPath("connectedglass", identifier + "_noside_alt"),
             ModelInstance.of(
                 DefaultModelTypes.CONNECTING,
                 ConnectingModelData.builder()
-                    .parent(new ResourceLocation("connectedglass", "block/template_glass_pane_noside_alt"))
-                    .texture("pane", new ResourceLocation("connectedglass", texture))
-                    .texture("edge", new ResourceLocation("connectedglass", texture + "_edge"))
+                    .parent(ResourceLocation.fromNamespaceAndPath("connectedglass", "block/template_glass_pane_noside_alt"))
+                    .texture("pane", ResourceLocation.fromNamespaceAndPath("connectedglass", texture))
+                    .texture("edge", ResourceLocation.fromNamespaceAndPath("connectedglass", texture + "_edge"))
                     .connection(DefaultConnectionPredicates.isSameBlock())
                     .build()
             )
