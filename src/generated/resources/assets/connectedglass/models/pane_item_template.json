@@ -19,17 +19,17 @@
         "east": {
           "texture": "#all"
         },
-        "down": {
-          "texture": "#edge"
-        },
-        "south": {
-          "texture": "#edge"
-        },
         "north": {
           "texture": "#edge"
         },
         "west": {
           "texture": "#all"
+        },
+        "down": {
+          "texture": "#edge"
+        },
+        "south": {
+          "texture": "#edge"
         },
         "up": {
           "texture": "#edge"

@@ -85,7 +85,7 @@ public class CGPaneBakedModel extends BakedModelWrapper<BakedModel> {
     }
 
     private static float[] getQuadCenter(int[] vertexData){
-        int vertexSize = DefaultVertexFormat.BLOCK.getIntegerSize();
+        int vertexSize = DefaultVertexFormat.BLOCK.getVertexSize() / 4;
         int vertices = vertexData.length / vertexSize;
         int positionOffset = VERTEX_POSITION_OFFSET / 4;
         float averageX = 0, averageY = 0, averageZ = 0;
@@ -109,17 +109,13 @@ public class CGPaneBakedModel extends BakedModelWrapper<BakedModel> {
         VertexFormatElement element = null;
         for(index = 0; index < vertexFormat.getElements().size(); index++){
             VertexFormatElement el = vertexFormat.getElements().get(index);
-            if(el.getUsage() == VertexFormatElement.Usage.POSITION){
+            if(el.usage() == VertexFormatElement.Usage.POSITION){
                 element = el;
                 break;
             }
         }
         if(index == vertexFormat.getElements().size() || element == null)
             throw new RuntimeException("Expected vertex format to have a POSITION attribute");
-        if(element.getType() != VertexFormatElement.Type.FLOAT)
-            throw new RuntimeException("Expected POSITION attribute to have data type FLOAT");
-        if(element.getByteSize() != 12)
-            throw new RuntimeException("Expected POSITION attribute to have 3 dimensions");
-        return vertexFormat.getOffset(index);
+        return vertexFormat.getOffset(element);
     }
 }
