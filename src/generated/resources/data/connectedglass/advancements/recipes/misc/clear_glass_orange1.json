@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "connectedglass:clear_glass_orange"
+      "id": "connectedglass:clear_glass_orange"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/clear_glass_orange1.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:borderless_glass_orange"
-            ]
+            "items": "connectedglass:borderless_glass_orange"
           }
         ]
       }

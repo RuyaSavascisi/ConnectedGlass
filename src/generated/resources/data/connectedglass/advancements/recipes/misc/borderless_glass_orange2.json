@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "connectedglass:borderless_glass_orange"
+      "id": "connectedglass:borderless_glass_orange"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/borderless_glass_orange2.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:borderless_glass"
-            ]
+            "items": "connectedglass:borderless_glass"
           }
         ]
       }
@@ -39,7 +37,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:dyes/orange"
+            "items": "#c:dyes/orange"
           }
         ]
       }

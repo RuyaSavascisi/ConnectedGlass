@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "connectedglass:clear_glass_pink"
+      "id": "connectedglass:clear_glass_pink"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/clear_glass_pink2.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:clear_glass"
-            ]
+            "items": "connectedglass:clear_glass"
           }
         ]
       }
@@ -39,7 +37,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:dyes/pink"
+            "items": "#c:dyes/pink"
           }
         ]
       }

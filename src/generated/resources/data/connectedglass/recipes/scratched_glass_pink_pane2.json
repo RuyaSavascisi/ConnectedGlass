@@ -10,11 +10,11 @@
       "item": "connectedglass:scratched_glass_pane"
     },
     "B": {
-      "tag": "forge:dyes/pink"
+      "tag": "c:dyes/pink"
     }
   },
   "result": {
-    "item": "connectedglass:scratched_glass_pink_pane",
+    "id": "connectedglass:scratched_glass_pink_pane",
     "count": 8
   }
 }

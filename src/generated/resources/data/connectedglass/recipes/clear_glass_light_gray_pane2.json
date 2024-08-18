@@ -10,11 +10,11 @@
       "item": "connectedglass:clear_glass_pane"
     },
     "B": {
-      "tag": "forge:dyes/light_gray"
+      "tag": "c:dyes/light_gray"
     }
   },
   "result": {
-    "item": "connectedglass:clear_glass_light_gray_pane",
+    "id": "connectedglass:clear_glass_light_gray_pane",
     "count": 8
   }
 }

@@ -36,10 +36,12 @@ dependencies {
     // Core library
     implementation "curse.maven:supermartijn642s-core-lib-454372:${core_library_file}"
     // Fusion
-    implementation "curse.maven:fusion-854949:${fusion_file}"
+//    implementation "curse.maven:fusion-854949:${fusion_file}"
+    implementation "com.supermartijn642:fusion:1.1.1-neoforge-mc1.20.6"
 
     // Rechiseled
-    implementation "curse.maven:rechiseled-558998:${rechiseled_file}"
+//    implementation "curse.maven:rechiseled-558998:${rechiseled_file}"
+    implementation "com.supermartijn642:rechiseled:1.1.6-neoforge-mc1.20.6"
 
     // Config library
     implementation "curse.maven:supermartijn642s-config-lib-438332:${config_library_file}"
@@ -61,7 +63,7 @@ tasks.withType(ProcessResources).configureEach {
     if (matcher.find())
         copyProperties.mod_version = copyProperties.mod_version.substring(0, matcher.start()) + "+" + copyProperties.mod_version.substring(matcher.start())
 
-    filesMatching(["META-INF/mods.toml", "modid.mixins.json", "pack.mcmeta"]) {
+    filesMatching(["META-INF/neoforge.mods.toml", "modid.mixins.json", "pack.mcmeta"]) {
         expand copyProperties
     }
 

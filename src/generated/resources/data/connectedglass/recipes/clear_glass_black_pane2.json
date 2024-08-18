@@ -10,11 +10,11 @@
       "item": "connectedglass:clear_glass_pane"
     },
     "B": {
-      "tag": "forge:dyes/black"
+      "tag": "c:dyes/black"
     }
   },
   "result": {
-    "item": "connectedglass:clear_glass_black_pane",
+    "id": "connectedglass:clear_glass_black_pane",
     "count": 8
   }
 }

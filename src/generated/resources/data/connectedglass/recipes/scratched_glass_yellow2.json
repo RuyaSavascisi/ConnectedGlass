@@ -10,11 +10,11 @@
       "item": "connectedglass:scratched_glass"
     },
     "B": {
-      "tag": "forge:dyes/yellow"
+      "tag": "c:dyes/yellow"
     }
   },
   "result": {
-    "item": "connectedglass:scratched_glass_yellow",
+    "id": "connectedglass:scratched_glass_yellow",
     "count": 8
   }
 }

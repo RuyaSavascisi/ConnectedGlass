@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "minecraft:lime_stained_glass"
+      "id": "minecraft:lime_stained_glass"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/vanilla_lime_stained_glass.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:scratched_glass_lime"
-            ]
+            "items": "connectedglass:scratched_glass_lime"
           }
         ]
       }

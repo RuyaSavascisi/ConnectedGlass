@@ -10,11 +10,11 @@
       "item": "connectedglass:clear_glass"
     },
     "B": {
-      "tag": "forge:dyes/purple"
+      "tag": "c:dyes/purple"
     }
   },
   "result": {
-    "item": "connectedglass:clear_glass_purple",
+    "id": "connectedglass:clear_glass_purple",
     "count": 8
   }
 }

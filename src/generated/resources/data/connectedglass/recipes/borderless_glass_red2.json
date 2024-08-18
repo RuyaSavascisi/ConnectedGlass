@@ -10,11 +10,11 @@
       "item": "connectedglass:borderless_glass"
     },
     "B": {
-      "tag": "forge:dyes/red"
+      "tag": "c:dyes/red"
     }
   },
   "result": {
-    "item": "connectedglass:borderless_glass_red",
+    "id": "connectedglass:borderless_glass_red",
     "count": 8
   }
 }

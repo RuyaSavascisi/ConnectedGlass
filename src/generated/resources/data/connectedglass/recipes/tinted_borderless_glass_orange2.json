@@ -10,11 +10,11 @@
       "item": "connectedglass:tinted_borderless_glass"
     },
     "B": {
-      "tag": "forge:dyes/orange"
+      "tag": "c:dyes/orange"
     }
   },
   "result": {
-    "item": "connectedglass:tinted_borderless_glass_orange",
+    "id": "connectedglass:tinted_borderless_glass_orange",
     "count": 8
   }
 }

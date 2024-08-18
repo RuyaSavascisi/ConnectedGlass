@@ -10,11 +10,11 @@
       "item": "connectedglass:clear_glass_pane"
     },
     "B": {
-      "tag": "forge:dyes/green"
+      "tag": "c:dyes/green"
     }
   },
   "result": {
-    "item": "connectedglass:clear_glass_green_pane",
+    "id": "connectedglass:clear_glass_green_pane",
     "count": 8
   }
 }

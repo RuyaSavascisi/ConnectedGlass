@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "minecraft:tinted_glass"
+      "id": "minecraft:tinted_glass"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/vanilla_tinted_glass.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:tinted_borderless_glass"
-            ]
+            "items": "connectedglass:tinted_borderless_glass"
           }
         ]
       }

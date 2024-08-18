@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "connectedglass:clear_glass_cyan_pane"
+      "id": "connectedglass:clear_glass_cyan_pane"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/clear_glass_cyan_pane1.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:borderless_glass_cyan_pane"
-            ]
+            "items": "connectedglass:borderless_glass_cyan_pane"
           }
         ]
       }

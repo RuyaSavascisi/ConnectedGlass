@@ -48,18 +48,14 @@ public class CGTagGenerator extends TagGenerator {
             }
         }
 
-        glass.forEach(this.blockTag(Tags.Blocks.GLASS)::add);
-        glass.stream().map(Block::asItem).forEach(this.itemTag(Tags.Items.GLASS)::add);
-        glassColored.forEach(this.blockTag(Tags.Blocks.STAINED_GLASS)::add);
-        glassColored.stream().map(Block::asItem).forEach(this.itemTag(Tags.Items.STAINED_GLASS)::add);
-        glassColorless.forEach(this.blockTag(Tags.Blocks.GLASS_COLORLESS)::add);
-        glassColorless.stream().map(Block::asItem).forEach(this.itemTag(Tags.Items.GLASS_COLORLESS)::add);
-        glassTinted.forEach(this.blockTag(Tags.Blocks.GLASS_TINTED)::add);
-        glassTinted.stream().map(Block::asItem).forEach(this.itemTag(Tags.Items.GLASS_TINTED)::add);
+        glass.forEach(this.blockTag(Tags.Blocks.GLASS_BLOCKS)::add);
+        glass.stream().map(Block::asItem).forEach(this.itemTag(Tags.Items.GLASS_BLOCKS)::add);
+        glassColorless.forEach(this.blockTag(Tags.Blocks.GLASS_BLOCKS_COLORLESS)::add);
+        glassColorless.stream().map(Block::asItem).forEach(this.itemTag(Tags.Items.GLASS_BLOCKS_COLORLESS)::add);
+        glassTinted.forEach(this.blockTag(Tags.Blocks.GLASS_BLOCKS_TINTED)::add);
+        glassTinted.stream().map(Block::asItem).forEach(this.itemTag(Tags.Items.GLASS_BLOCKS_TINTED)::add);
         panes.forEach(this.blockTag(Tags.Blocks.GLASS_PANES)::add);
         panes.stream().map(Block::asItem).forEach(this.itemTag(Tags.Items.GLASS_PANES)::add);
-        panesColored.forEach(this.blockTag(Tags.Blocks.STAINED_GLASS_PANES)::add);
-        panesColored.stream().map(Block::asItem).forEach(this.itemTag(Tags.Items.STAINED_GLASS_PANES)::add);
         panesColorless.forEach(this.blockTag(Tags.Blocks.GLASS_PANES_COLORLESS)::add);
         panesColorless.stream().map(Block::asItem).forEach(this.itemTag(Tags.Items.GLASS_PANES_COLORLESS)::add);
         panesTinted.forEach(this.blockTag("forge", "glass_panes/tinted")::add);

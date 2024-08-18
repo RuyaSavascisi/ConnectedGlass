@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "connectedglass:scratched_glass_green"
+      "id": "connectedglass:scratched_glass_green"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/scratched_glass_green1.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:clear_glass_green"
-            ]
+            "items": "connectedglass:clear_glass_green"
           }
         ]
       }
