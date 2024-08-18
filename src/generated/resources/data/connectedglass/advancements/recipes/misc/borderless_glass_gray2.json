@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "connectedglass:borderless_glass_gray"
+      "id": "connectedglass:borderless_glass_gray"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/borderless_glass_gray2.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:borderless_glass"
-            ]
+            "items": "connectedglass:borderless_glass"
           }
         ]
       }
@@ -39,7 +37,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "c:gray_dyes"
+            "items": "#c:gray_dyes"
           }
         ]
       }

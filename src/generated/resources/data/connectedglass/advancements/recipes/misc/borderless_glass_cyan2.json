@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "connectedglass:borderless_glass_cyan"
+      "id": "connectedglass:borderless_glass_cyan"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/borderless_glass_cyan2.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:borderless_glass"
-            ]
+            "items": "connectedglass:borderless_glass"
           }
         ]
       }
@@ -39,7 +37,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "c:cyan_dyes"
+            "items": "#c:cyan_dyes"
           }
         ]
       }
