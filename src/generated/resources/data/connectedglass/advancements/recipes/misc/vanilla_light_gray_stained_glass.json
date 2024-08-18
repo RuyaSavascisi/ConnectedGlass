@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "minecraft:light_gray_stained_glass"
+      "id": "minecraft:light_gray_stained_glass"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/vanilla_light_gray_stained_glass.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:scratched_glass_light_gray"
-            ]
+            "items": "connectedglass:scratched_glass_light_gray"
           }
         ]
       }

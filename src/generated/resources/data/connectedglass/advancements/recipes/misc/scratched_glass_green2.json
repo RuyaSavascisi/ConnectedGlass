@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "connectedglass:scratched_glass_green"
+      "id": "connectedglass:scratched_glass_green"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/scratched_glass_green2.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:scratched_glass"
-            ]
+            "items": "connectedglass:scratched_glass"
           }
         ]
       }
@@ -39,7 +37,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:dyes/green"
+            "items": "#forge:dyes/green"
           }
         ]
       }

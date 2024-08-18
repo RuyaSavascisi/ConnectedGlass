@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "connectedglass:borderless_glass_light_blue_pane"
+      "id": "connectedglass:borderless_glass_light_blue_pane"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/borderless_glass_light_blue_pane2.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:borderless_glass_pane"
-            ]
+            "items": "connectedglass:borderless_glass_pane"
           }
         ]
       }
@@ -39,7 +37,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:dyes/light_blue"
+            "items": "#forge:dyes/light_blue"
           }
         ]
       }

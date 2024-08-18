@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "display": {
     "icon": {
-      "item": "connectedglass:tinted_borderless_glass_black"
+      "id": "connectedglass:tinted_borderless_glass_black"
     },
     "title": {
       "translate": "connectedglass.advancement.recipes/misc/tinted_borderless_glass_black2.title"
@@ -27,9 +27,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "connectedglass:tinted_borderless_glass"
-            ]
+            "items": "connectedglass:tinted_borderless_glass"
           }
         ]
       }
@@ -39,7 +37,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:dyes/black"
+            "items": "#forge:dyes/black"
           }
         ]
       }
